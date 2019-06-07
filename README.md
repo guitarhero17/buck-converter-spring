@@ -1,4 +1,7 @@
 # :zap: buck-converter-spring :zap:
+
+![In realitiy the smoothness is far greater](buck_converter_2.gif)
+
 An interactive buck converter built with React.js, Bootstrap and Spring Boot.
 
 You can start the application by running `./mvnw spring-boot:run` in the project's folder or downloading and running the packaged .jar-executable file (See [Releases](https://github.com/guitarhero17/buck-converter-spring/releases)).
