@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+
+<head lang="en">
+	<meta charset="UTF-8" />
+	<link rel="shortcut icon" href="/images/Lightning.ico" type="image/x-icon"/>
+	<title>Buck Converter</title>
+	<link rel="stylesheet" href="/css/bootstrap.min.css" />
+	<link rel="stylesheet" href="/css/BuckConverter.css" />
+</head>
+
+<body>
+
+	<!-- Navbar with a dropdown item which reveals the "Log Out" button. Built with Bootstrap. -->
+	<nav class="navbar navbar-light bg-light animated">
+
+		<span class="navbar-brand mb-0 h1">Buck Converter</span>
+
+		<ul class="navbar-nav">
+			<li class="nav-item dropdown">
+				<a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+					data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+					
+					<!-- Using Thymeleaf to dynamically display the logged-in user's name -->
+					Hello, <span id="adminname" th:text="${#authentication.name}">user</span>.
+				</a>
+					  <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink" style="width: 100px">
+						  <form role="button" class="dropdown-item" th:action="@{/logout}" method="post">
+							<button type="submit" class="btn btn-link">Log Out</button>
+						  </form>
+					  </div>
+					</li>
+					</ul>
+				  
+				 </nav>
+
+	<!-- React content is inserted here -->
+	<div id="react"></div>
+	
+	<!-- jQuery and Bootstrap Bundle scripts are used for the dropdown menu functionality -->
+	<script src="js/jquery-3.4.1.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    
+    <!-- webpack bundles all of the required libraries into one script -->
+	<script src="built/webpack_bundle.js"></script>
+        
+</body>
+</html>

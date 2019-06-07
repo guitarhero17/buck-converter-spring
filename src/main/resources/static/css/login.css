@@ -1,0 +1,36 @@
+html,body{
+	background-image: url('../images/thunderstorm_pixabay.jpg');
+	background-size: cover;
+	background-repeat: no-repeat;
+	height: 100%;
+	}
+	
+	.container {
+		height: 100%;
+		align-content: center;
+	}
+	
+	.card {
+		height: fit-content;
+		width: 400px;
+		margin-top: auto;
+		margin-bottom: auto;
+		background-color: rgba(0, 0, 0, 0.3);
+	}
+	
+	.card-header h3 {
+		color: white;
+	}
+	
+	.input-group-prepend span {
+		width: 50px;
+		background-color: #FFC312;
+		border: 0 ;
+		
+	}
+	
+	input:focus {
+		outline: 0 0 0 0 !important;
+		box-shadow: 0 0 0 0 !important;
+	}
+	

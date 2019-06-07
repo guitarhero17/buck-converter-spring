@@ -1,0 +1,44 @@
+{
+  "name": "buck-converter-spring",
+  "version": "1.0.0",
+  "description": "Interactive buck converter with React.JS",
+  "main": "index.js",
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+  "author": "Dobromir Palushev",
+  "license": "ISC",
+  "dependencies": {
+    "react": "^16.5.2",
+    "react-dom": "^16.5.2",
+    "lodash": "^4.17.11",
+    "react-bootstrap": "^0.32.4",
+    "reactstrap": "^6.5.0",
+    "chart.js": "^2.7.3",
+    "react-chartjs-2": "^2.7.4",
+    "react-scripts": "2.1.8"
+  },
+  "babel": {
+    "plugins": [
+      "@babel/plugin-proposal-class-properties"
+    ]
+  },
+  "devDependencies": {
+    "@babel/core": "^7.2.0",
+    "@babel/preset-env": "^7.2.0",
+    "@babel/preset-react": "^7.0.0",
+    "@babel/plugin-proposal-class-properties": "^7.2.1",
+    "babel-loader": "8.0.5",
+    "webpack": "4.28.3",
+    "webpack-cli": "^3.1.2"
+  },
+  "browserslist": [
+    ">0.2%",
+    "not dead",
+    "not ie <= 11",
+    "not op_mini all"
+  ]
+}
