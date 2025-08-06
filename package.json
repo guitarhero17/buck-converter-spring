@@ -19,7 +19,7 @@
     "reactstrap": "^6.5.0",
     "chart.js": "^2.7.3",
     "react-chartjs-2": "^2.7.4",
-    "react-scripts": "2.1.8"
+    "react-scripts": "5.0.1"
   },
   "babel": {
     "plugins": [
